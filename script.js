@@ -80,3 +80,17 @@ function typeLines() {
 }
 
 window.addEventListener("load", typeLines);
+
+const music = document.getElementById("bg-music");
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", () => {
+  music.volume = 0.5; // volumen suave
+  music.play();
+});
+
+btn.addEventListener("click", () => {
+  music.volume = 0.5;
+  music.play();
+  // aquí ya corre tu animación de texto
+});
